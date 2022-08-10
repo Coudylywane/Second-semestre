@@ -1,16 +1,69 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Projet burger</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/stylesheets/screen.css}">
+
   </head>
   <body>
-    <p>BIENVENUE</p>
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-dark">
+        <img class="navbar-brand" src="#" id="logo_custom" width="10%"  alt="logo">
+          <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon "></span>
+          </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Acceuil</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><b>Menu</b></a>
+                  </li>
+                </ul>
+            </div> 
+      </nav>
+     <div class="row">
+      <div class="col-3">
+          <div class="info">
+            <p class="contact">Commander en ligne ou appelez nous</p>
+            <p class="num">+221 78 171 95 25</p>
+          </div>
+      </div>
+      <div class="col-6">
+        <div class="icone">
+         
+          <img th:src="@{images/User.png}" class="user" alt="...">
+          <img th:src="@{images/shop.png}" class="shop" alt="...">
+      </div>
+      </div>
+
+     </div>
+      
+    </div>
+    <div class="container-fluide">
+      <div>
+        <h2 class="titre">Puissant, Charnu et mmm</h2>
+        <p class="sous-titre">le remede a toutes les fingales est cache a l’interieur du Burger</p>
+      </div>
+      <div class="burger">
+        <img th:src="@{images/1.png}" class="tomate1" alt="...">
+        <img th:src="@{images/2.png}" class="tomate2" alt="...">
+        <img th:src="@{images/image 8.png}" class="img" alt="...">
+        <img th:src="@{images/burger1.png}" class="shop" alt="...">
+        <img th:src="@{images/3.png}" class="tomate3" alt="...">
+        <img th:src="@{images/3.png}" class="tomate4" alt="...">
+
+
+      </div>
+    </div>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,3 +71,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
