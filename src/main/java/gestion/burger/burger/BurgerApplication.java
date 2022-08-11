@@ -1,13 +1,28 @@
 package gestion.burger.burger;
 
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import gestion.burger.burger.fixture.BurgerFixture;
+
+
 @SpringBootApplication
-public class BurgerApplication {
+public class BurgerApplication implements CommandLineRunner {
+	@Autowired
+	private BurgerFixture burgerFixture;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BurgerApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		burgerFixture.loadBurgers();
+		
 	}
 
 }

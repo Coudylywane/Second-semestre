@@ -104,9 +104,14 @@ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
     color: #ffc107;
 }
 
+.prix3 {
+    margin-left: 209px;
+    padding: 11px;
+}
+
 
 .catalogue2 {
-    position: absolute;
+    // position: absolute;
     width: 333px;
     height: 303px;
     left: 540px;
@@ -126,32 +131,20 @@ background: #FFFFFF;
 box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
 
-.prixx{
-position: absolute;
-left: 1006px;
-top: 1516px;
-
-background: #4D2C21;
-border-radius: 5px;
-white-space: nowrap;
+.prixx {
+    position: absolute;
+    background: #4D2C21;
+    border-radius: 5px;
+    white-space: nowrap;
     padding: 7px;
     color: #ffc107;
+    margin-left: 20px;
+    margin-top: -29px;
 }
 
 
 
 
-    .prixxx {
-        position: absolute;
-        /* height: 42px; */
-        left: 554px;
-        top: 1516px;
-        background: #4D2C21;
-        border-radius: 5px;
-        white-space: nowrap;
-        padding: 7px;
-        color: #ffc107;
-    }
 
 
 

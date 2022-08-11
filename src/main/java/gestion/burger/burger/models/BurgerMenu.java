@@ -16,7 +16,8 @@ import lombok.Setter;
 public class BurgerMenu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id ;
+    private String quantite ;
 
     @ManyToOne
     @JoinColumn(name = "burger",referencedColumnName= "id")
@@ -25,8 +26,5 @@ public class BurgerMenu {
     @ManyToOne
     @JoinColumn(name = "menu",referencedColumnName= "id")
     private Menu menu ;
-
-
-    private int quantite ;
 
 }

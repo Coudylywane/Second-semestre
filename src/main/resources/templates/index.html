@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.thymeleaf.org/">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" th:href="@{/stylesheets/screen.css}">
 
   </head>
@@ -59,10 +60,128 @@
         <img th:src="@{images/burger1.png}" class="shop" alt="...">
         <img th:src="@{images/3.png}" class="tomate3" alt="...">
         <img th:src="@{images/3.png}" class="tomate4" alt="...">
-
-
       </div>
     </div>
+    <div class="container " style="height: 800px;">
+      <div class="row mt-5 text-center">
+        <img th:src="@{images/10.png}" class="fromage1" alt="...">
+        <img th:src="@{images/12.png}" class="fromage2" alt="...">
+        <img th:src="@{images/12.png}" class="fromage4" alt="...">
+        <img th:src="@{images/10.png}" class="fromage3" alt="...">
+        <p class="desc">ILS SONT DISPONIBLES EN DIFFERENTES FORMES ET TAILLES</p>
+        <p class="desc1">Certains sont du boeuf et d’autres sont des poussins,</p>
+        <p class="desc2">mais ils sont tous excellents</p>
+      </div>
+    <div class="row">
+      <div class="col-md-4 " th:each=" b: ${burgers}">
+        <div class="catalogue2" >
+          <img th:src="@{images/burger3.png}" class="catalogue-image" alt="...">
+          <p class="prix3" th:text="${b.nom}"></p>
+          <button class="button2">Commander</button>
+          <div class="prixx">
+            <span th:text="${b.prix}"></span>
+          </div>
+        </div> 
+      </div> 
+    </div>
+                   
+          
+        
+      </div>
+
+   </div>
+    
+    <div class="container-fluidess">
+      <img th:src="@{images/23.png}" class="" alt="...">
+      <img th:src="@{images/23.png}" style="margin-left: 650px;" alt="...">
+      <p class="avan"> est-ce qu'un Burger™ est sain ?… putain ouais !</p>
+      <p class="avant">mais nous les mangerions de toute façon, chaque jour</p>
+      <img th:src="@{images/22.png}" class="img22" alt="...">
+      <div class="card1">
+        <p>Petit pain Burger</p>
+        <img th:src="@{images/vector1.png}" style="margin-top: 22px;" alt="...">
+        <p class="calorie">165kcal</p>
+        <p class="bacon">Bacon et oeuf</p>
+        <img th:src="@{images/group22.png}" style="margin-top: 12px;" alt="...">
+        <p class="calorie">142kcal</p>
+      </div>
+      <div class="card2">
+        <p>Petit pain Burger</p>
+        <img th:src="@{images/vector1.png}" style="margin-top: 22px;" alt="...">
+        <p class="calorie">165kcal</p>
+        <p class="bacon">Bacon et oeuf</p>
+        <img th:src="@{images/group22.png}" style="margin-top: 12px;"  alt="...">
+        <p class="calorie">142kcal</p>
+      </div>
+      <p class="bas">oh,mon garçon...ils ont un gout d’oeuf exceptionnel!</p>
+    </div>
+    <div class="container-fluidee">
+      <img th:src="@{images/img25.png}" alt="...">
+      <img th:src="@{images/img25.png}" style="margin-left: 50%;" alt="...">
+      <div style="margin-top: -26%;">
+      <p class="comment">Comment ça marche</p>
+      <p class="etapes">4 étapes faciles pour profiter</p>
+      </div>
+
+      <div>
+        <img th:src="@{images/group33.png}" class="groupe33" alt="...">
+        <div class="nourit1">
+          <p>Sélectionnez votre nourriture</p>
+          <p class="nourits">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page.</p>
+        </div>
+        <p class="trait33">-------------  </p>
+        <img th:src="@{images/group32.png}" class="groupe32" alt="...">
+        
+        <div class="nourit2">
+          <p>Ajouter à votre panier</p>
+          <p class="nourits">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page.</p>
+        </div>
+
+        <p class="trait32">-------------  </p>
+        <img th:src="@{images/group31.png}" class="groupe31" alt="...">
+
+        <div class="nourit3">
+          <p>Complétez votre paiement</p>
+          <p class="nourits">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page.</p>
+        </div>
+
+        <p class="trait31">-------------  </p>
+        <img th:src="@{images/group30.png}" class="groupe30" alt="...">
+
+        <div class="nourit4">
+          <p>Cueillette ou livraison</p>
+          <p class="nourits">C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page.</p>
+        </div>
+      </div>
+
+      
+    </div>
+    <div class="container-livraison">
+      <div class="img26">
+        <img th:src="@{images/img26.png}" alt="...">
+      </div>
+      <div style="padding-top: 103px;">
+        <p class="liv">Livraison la plus rapide</p>
+      <p class="liv1">Livraison en 25 minutes pour vous</p>
+      <p class="liv2">Il existe de nombreuses variantes de passages de 
+        Lorem Ipsum disponibles, mais la majorité ont 
+        subi une altération sous une forme ou une autre
+        , par de l'humour injecté ou des mots aléatoires qui ne
+         semblent même pas légèrement crédibles. 
+        Si vous comptez utiliser un passage du Lorem Ipsum, 
+        vous devez vous assurer qu'il n'y a rien au milieu du texte.</p>
+        <p class="liv3">Appelez maintenant : +221 78 171 95 25</p>
+      </div>
+
+
+    <!-- <div class="container-footer">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-snapchat"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+    </div> -->
+
+
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
