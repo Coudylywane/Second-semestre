@@ -1,0 +1,93 @@
+/* line 1, ../../sass/partials/index4.scss */
+.container-fluidess {
+  background-color: #F8D65D;
+  height: 800px;
+}
+
+/* line 6, ../../sass/partials/index4.scss */
+.avan, .avant {
+  position: absolute;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+/* line 15, ../../sass/partials/index4.scss */
+.avan {
+  width: 971px;
+  height: 171px;
+  left: 199px;
+  top: 1932px;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+/* line 24, ../../sass/partials/index4.scss */
+.avant {
+  width: 480px;
+  height: 25px;
+  left: 489px;
+  top: 2008px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+/* line 34, ../../sass/partials/index4.scss */
+.img22 {
+  position: absolute;
+  width: 483px;
+  height: 428px;
+  left: 483px;
+  top: 2092px;
+}
+
+/* line 42, ../../sass/partials/index4.scss */
+.card1, .card2 {
+  position: absolute;
+  width: 352px;
+  height: 316px;
+  background: rgba(236, 211, 119, 0.72);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+}
+
+/* line 52, ../../sass/partials/index4.scss */
+.card1 {
+  left: 66px;
+  top: 2178px;
+}
+
+/* line 57, ../../sass/partials/index4.scss */
+.card2 {
+  left: 1060px;
+  top: 2178px;
+}
+
+/* line 62, ../../sass/partials/index4.scss */
+.calorie {
+  color: white;
+  margin-top: 10px;
+}
+
+/* line 67, ../../sass/partials/index4.scss */
+.bacon {
+  margin-top: 21px;
+}
+
+/* line 71, ../../sass/partials/index4.scss */
+.bas {
+  position: absolute;
+  width: 459px;
+  height: 25px;
+  left: 521px;
+  top: 2607px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+}

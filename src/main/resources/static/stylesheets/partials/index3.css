@@ -1,0 +1,188 @@
+/* line 1, ../../sass/partials/index3.scss */
+.container-fluides {
+  background-color: #fff;
+  height: 800px;
+}
+
+/* line 6, ../../sass/partials/index3.scss */
+.fromage1 {
+  position: absolute;
+  width: 226.91px;
+  height: 362.92px;
+  left: 6.19px;
+  top: 1569.66px;
+  transform: rotate(-103.56deg);
+}
+
+/* line 16, ../../sass/partials/index3.scss */
+.fromage3 {
+  position: absolute;
+  width: 226.91px;
+  height: 362.92px;
+  left: 1162.19px;
+  top: 1569.66px;
+  transform: rotate(-273.56deg);
+}
+
+/* line 26, ../../sass/partials/index3.scss */
+.fromage4 {
+  position: absolute;
+  width: 226.91px;
+  height: 362.92px;
+  left: 1121.19px;
+  transform: rotate(-103.56deg);
+}
+
+/* line 34, ../../sass/partials/index3.scss */
+.desc {
+  position: absolute;
+  width: 476px;
+  height: 20px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A5102E;
+  margin-top: -219px;
+  margin-left: 74px;
+}
+
+/* line 48, ../../sass/partials/index3.scss */
+.desc1 {
+  position: absolute;
+  width: 544px;
+  height: 86px;
+  left: 41px;
+  top: 1191px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 64, ../../sass/partials/index3.scss */
+.desc2 {
+  position: absolute;
+  width: 524px;
+  height: 51px;
+  left: 51px;
+  top: 1270px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 79, ../../sass/partials/index3.scss */
+.catalogue1 {
+  position: absolute;
+  width: 333px;
+  height: 303px;
+  left: 765px;
+  top: 1149px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* line 89, ../../sass/partials/index3.scss */
+.catalogue-image {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 5px;
+}
+
+/* line 96, ../../sass/partials/index3.scss */
+.prix {
+  position: absolute;
+  left: 779px;
+  top: 1162px;
+  background: #4D2C21;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 7px;
+  color: #ffc107;
+}
+
+/* line 108, ../../sass/partials/index3.scss */
+.catalogue2 {
+  position: absolute;
+  width: 333px;
+  height: 303px;
+  left: 540px;
+  top: 1505px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* line 118, ../../sass/partials/index3.scss */
+.catalogue3 {
+  position: absolute;
+  width: 333px;
+  height: 303px;
+  left: 992px;
+  top: 1505px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* line 129, ../../sass/partials/index3.scss */
+.prixx {
+  position: absolute;
+  left: 1006px;
+  top: 1516px;
+  background: #4D2C21;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 7px;
+  color: #ffc107;
+}
+
+/* line 144, ../../sass/partials/index3.scss */
+.prixxx {
+  position: absolute;
+  /* height: 42px; */
+  left: 554px;
+  top: 1516px;
+  background: #4D2C21;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 7px;
+  color: #ffc107;
+}
+
+/* line 158, ../../sass/partials/index3.scss */
+.button1, .button2, .button3 {
+  position: absolute;
+  width: 130px;
+  height: 32px;
+  background: #A5102E;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+/* line 168, ../../sass/partials/index3.scss */
+.button1 {
+  left: 850px;
+  top: 1412px;
+}
+
+/* line 173, ../../sass/partials/index3.scss */
+.button2 {
+  left: 94px;
+  top: 260px;
+}
+
+/* line 178, ../../sass/partials/index3.scss */
+.button3 {
+  left: 100px;
+  top: 260px;
+}
