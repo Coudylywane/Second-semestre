@@ -1,0 +1,128 @@
+.container-fluidee{
+    background-color: #fff;
+    height: 700px;
+}
+
+
+.comment {
+    position: absolute;
+    width: 384px;
+    height: 51px;
+    left: 593px;
+    
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: #F8D65D;
+}
+
+.comment, .etapes{
+    font-family: 'Overpass';
+    font-style: normal;
+}
+
+.etapes{
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    left: 626px;
+
+
+   
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 60px;
+}
+
+.groupe33, .groupe32, .groupe31, .groupe30 {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    margin-top: 209px;
+}
+
+.trait33, .trait32, .trait31, .trait30 {
+    position: absolute;
+    width: 91px;
+    height: 25px;
+    margin-top: 244px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #F8D65D;
+}
+
+.groupe33{
+    left: 30%;
+}
+
+.groupe32{
+    left: 45%;
+}
+
+.groupe31{
+    left: 60%;
+}
+
+.groupe30{
+    left: 75%;
+}
+
+////////////////////////////////////////////
+
+.trait33{
+    left: 37%;
+}
+
+.trait32{
+    left: 52%;
+}
+
+.trait31{
+    left: 67%;
+}
+
+.nourit1, .nourit2, .nourit3, .nourit4{
+    position: absolute;
+    width: 224px;
+    height: 20px;
+    top: 3088px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.nourit1{
+    left: 378px;
+}
+
+.nourit2{
+    left:621px;
+}
+
+.nourit3{
+    left:852px;
+}
+
+.nourit4{
+    left:1089px;
+}
+
+.nourits{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: rgba(0, 0, 0, 0.72);
+}
+

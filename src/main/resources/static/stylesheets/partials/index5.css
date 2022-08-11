@@ -1,0 +1,137 @@
+/* line 1, ../../sass/partials/index5.scss */
+.container-fluidee {
+  background-color: #fff;
+  height: 700px;
+}
+
+/* line 7, ../../sass/partials/index5.scss */
+.comment {
+  position: absolute;
+  width: 384px;
+  height: 51px;
+  left: 593px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  color: #F8D65D;
+}
+
+/* line 20, ../../sass/partials/index5.scss */
+.comment, .etapes {
+  font-family: 'Overpass';
+  font-style: normal;
+}
+
+/* line 25, ../../sass/partials/index5.scss */
+.etapes {
+  position: absolute;
+  width: 320px;
+  height: 60px;
+  left: 626px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  margin-top: 60px;
+}
+
+/* line 40, ../../sass/partials/index5.scss */
+.groupe33, .groupe32, .groupe31, .groupe30 {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  margin-top: 209px;
+}
+
+/* line 47, ../../sass/partials/index5.scss */
+.trait33, .trait32, .trait31, .trait30 {
+  position: absolute;
+  width: 91px;
+  height: 25px;
+  margin-top: 244px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F8D65D;
+}
+
+/* line 60, ../../sass/partials/index5.scss */
+.groupe33 {
+  left: 30%;
+}
+
+/* line 64, ../../sass/partials/index5.scss */
+.groupe32 {
+  left: 45%;
+}
+
+/* line 68, ../../sass/partials/index5.scss */
+.groupe31 {
+  left: 60%;
+}
+
+/* line 72, ../../sass/partials/index5.scss */
+.groupe30 {
+  left: 75%;
+}
+
+/* line 78, ../../sass/partials/index5.scss */
+.trait33 {
+  left: 37%;
+}
+
+/* line 82, ../../sass/partials/index5.scss */
+.trait32 {
+  left: 52%;
+}
+
+/* line 86, ../../sass/partials/index5.scss */
+.trait31 {
+  left: 67%;
+}
+
+/* line 90, ../../sass/partials/index5.scss */
+.nourit1, .nourit2, .nourit3, .nourit4 {
+  position: absolute;
+  width: 224px;
+  height: 20px;
+  top: 3088px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* line 103, ../../sass/partials/index5.scss */
+.nourit1 {
+  left: 378px;
+}
+
+/* line 107, ../../sass/partials/index5.scss */
+.nourit2 {
+  left: 621px;
+}
+
+/* line 111, ../../sass/partials/index5.scss */
+.nourit3 {
+  left: 852px;
+}
+
+/* line 115, ../../sass/partials/index5.scss */
+.nourit4 {
+  left: 1089px;
+}
+
+/* line 119, ../../sass/partials/index5.scss */
+.nourits {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.72);
+}
