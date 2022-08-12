@@ -1,53 +1,8 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.thymeleaf.org/">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" th:href="@{/stylesheets/screen.css}">
-
-  </head>
+  <div th:replace="fragment/header :: header"></div>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-dark">
-        <img class="navbar-brand" src="#" id="logo_custom" width="10%"  alt="logo">
-          <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon "></span>
-          </button>
-            <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto ">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><b>Acceuil</b></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><b>Menu</b></a>
-                  </li>
-                </ul>
-            </div> 
-      </nav>
-     <div class="row">
-      <div class="col-3">
-          <div class="info">
-            <p class="contact">Commander en ligne ou appelez nous</p>
-            <p class="num">+221 78 171 95 25</p>
-          </div>
-      </div>
-      <div class="col-6">
-        <div class="icone">
-         
-          <img th:src="@{images/User.png}" class="user" alt="...">
-          <img th:src="@{images/shop.png}" class="shop" alt="...">
-      </div>
-      </div>
-
-     </div>
-      
-    </div>
+    <div th:replace="fragment/navebar :: navbar"></div>
     <div class="container-fluide">
       <div>
         <h2 class="titre">Puissant, Charnu et mmm</h2>
@@ -68,9 +23,11 @@
         <img th:src="@{images/12.png}" class="fromage2" alt="...">
         <img th:src="@{images/12.png}" class="fromage4" alt="...">
         <img th:src="@{images/10.png}" class="fromage3" alt="...">
-        <p class="desc">ILS SONT DISPONIBLES EN DIFFERENTES FORMES ET TAILLES</p>
-        <p class="desc1">Certains sont du boeuf et d’autres sont des poussins,</p>
-        <p class="desc2">mais ils sont tous excellents</p>
+        <div class="desc">
+          <p>ILS SONT DISPONIBLES EN DIFFERENTES FORMES ET TAILLES</p>
+          <p>Certains sont du boeuf et d’autres sont des poussins,</p>
+          <p>mais ils sont tous excellents</p>
+        </div>
       </div>
     <div class="row">
       <div class="col-md-4 " th:each=" b: ${burgers}">

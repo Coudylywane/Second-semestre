@@ -29,4 +29,8 @@ public class BurgerService {
     public List<Burger> getAllBurger(){
         return burgerRepository.findAll();
     }
+
+    public Burger findBurgerById(Long id){
+        return burgerRepository.findById(id).orElse(null);
+    }
 }

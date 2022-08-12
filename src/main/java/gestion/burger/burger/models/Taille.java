@@ -12,26 +12,17 @@ import javax.persistence.OneToMany;
 import lombok.Setter;
 import lombok.Getter;
 
-
 @Entity
 @Setter
 @Getter
-public class Menu {
+public class Taille {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+    private String marque ;
     private String nom ;
     private int prix ;
 
-    @OneToMany(mappedBy = "menu")
-    private List<BurgerMenu> burgerMenus = new ArrayList<>();
-
-    @OneToMany(mappedBy = "menu")
-    private List<FriteMenu> friteMenus = new ArrayList<>();
-
-    @OneToMany(mappedBy = "menu")
+    @OneToMany(mappedBy = "taille")
     private List<MenuTaille> menuTailles = new ArrayList<>();
-
-    @OneToMany(mappedBy = "menu")
-    private List<MenuCommande> menuCommandes = new ArrayList<>();
 }
