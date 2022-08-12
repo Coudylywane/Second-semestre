@@ -1,88 +1,59 @@
+
 .container-fluid {
     background-color: #A5102E;
-    height: 170px;
-}
- 
- 
- .nav-link{
-     color:white;
-     font-family: 'Overpass';
-     font-style: normal;
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 20px;
- }
- 
- .info {
-     position: absolute;
-     left: 2.99%;
-     right: 74.86%;
-     top: 2.5%;
-     bottom: 96.24%;
-     width: 255px;
-     height: 58.56px;
-     Top: 86.80000000000001px;
-     Left: 43px;
-     border-radius: 10px;
-     background: rgba(239, 19, 19, 0.13);
- }
- 
- .contact{
-     position: absolute;
-     left: 8.38%;
-     top: 2.62%;
-     bottom: 96.92%;
- 
- font-family: 'Overpass';
- font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 18px;
- color: #FFFFFF;
- }
- 
- .num{
- position: absolute;
- left: 13.76%;
- top: 37.18%;
- bottom: 96.32%;
- 
- font-family: 'Overpass';
- font-style: normal;
- font-weight: 800;
- font-size: 16px;
- line-height: 20px;
-
- color: #FFFFFF;
+    padding: 10px;
 }
 
 
-.icone{
-    position: absolute;
-     margin-right: 50px;
-     bottom: 96.24%;
-     width: 100px;
-     height: 58.56px;
-     Top: 86.80000000000001px;
-     Left: 110%;
-     border-radius: 10px;
-     background: rgba(239, 19, 19, 0.13); 
-}
-
-.user{
-    position: absolute;
-    right: 57.49%;
-    top: 2.6%;
-    bottom: 96.64%;
+.navbar{
+    background: #A5102E;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 
 
-.shop {
-    position: absolute;
-    right: 22.29%;
-    top: 16.75%;
-    bottom: 96.82%;
+.navbar-brand {
+    margin-right: 0;
 }
- 
- 
+
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link , .navbar-light .navbar-brand{
+    color:white;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.info{
+    margin-left: 12%;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;  
+    width: auto;
+}
+
+.contact, .contacte{
+    border-radius: 10px;
+    background: rgba(239, 19, 19, 0.13);
+    padding: 10px;
+}
+
+.contacte{
+   display: flex;
+   width: 70px;
+}
+
+.fa-bag-shopping{
+    margin-left: 13px;
+}
+

@@ -1,6 +1,8 @@
-.container-fluidess{
+
+
+.container-fluide{
     background-color: #F8D65D;
-    height: 800px;
+    padding: 10px;
 }
 
 .avan, .avant{
@@ -40,7 +42,7 @@
 }
 
 .card1, .card2{
-    position: absolute;
+    position: relative;
     width: 352px;
     height: 316px;
     background: rgba(236, 211, 119, 0.72);
@@ -49,15 +51,7 @@
     padding: 30px;
 }
 
-.card1{
-    left: 66px;
-    top: 2178px;
-}
 
-.card2{
-    left: 1060px;
-    top: 2178px;
-}
 
 .calorie{
     color: white;
@@ -69,15 +63,17 @@
 }
 
 .bas {
-    position: absolute;
-    width: 459px;
-    height: 25px;
-    left: 521px;
-    top: 2607px;
+   
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    color: #000000;
+    text-align: center;
+}
+
+.glob{
+   display: flex;
+   margin-left: 10%;
+   margin-top: -10%;
 }

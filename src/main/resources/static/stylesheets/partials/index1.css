@@ -1,82 +1,38 @@
 /* line 1, ../../sass/partials/index1.scss */
-.container-fluide {
-  background-color: #A5102E;
-  height: 900px;
+.titre {
+  text-align: center;
+  color: #FFFFFF;
 }
 
-/* line 6, ../../sass/partials/index1.scss */
-.titre {
-  position: absolute;
-  width: 731px;
-  height: 81px;
-  left: 361px;
-  top: 223px;
+/* line 7, ../../sass/partials/index1.scss */
+.titre h2 {
   font-family: 'Overpass';
   font-style: italic;
   font-weight: 800;
   font-size: 64px;
   line-height: 81px;
-  text-align: center;
-  color: #FFFFFF;
 }
 
-/* line 25, ../../sass/partials/index1.scss */
-.sous-titre {
-  position: absolute;
-  width: 584px;
-  height: 50px;
-  left: 434px;
-  top: 304px;
+/* line 15, ../../sass/partials/index1.scss */
+.titre p {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #FFFFFF;
 }
 
-/* line 42, ../../sass/partials/index1.scss */
+/* line 23, ../../sass/partials/index1.scss */
 .img {
   position: absolute;
-  width: 1147px;
-  height: 794px;
-  left: 129px;
-  top: 241px;
+  margin-top: -8%;
 }
 
-/* line 50, ../../sass/partials/index1.scss */
-.tomate1 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 10px;
-  top: 237px;
-}
-
-/* line 58, ../../sass/partials/index1.scss */
-.tomate2 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 10px;
-  top: 740px;
-}
-
-/* line 66, ../../sass/partials/index1.scss */
-.tomate3 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  top: 263px;
-  left: 1059px;
-  transform: rotate(46.72deg);
-}
-
-/* line 76, ../../sass/partials/index1.scss */
-.tomate4 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 1059px;
-  top: 740px;
+/* line 29, ../../sass/partials/index1.scss */
+.shop {
+  position: relative;
+  margin-top: -40%;
+  width: 600px;
+  height: 600px;
+  margin-left: 26%;
 }

@@ -67,14 +67,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/partials/index.scss */
+/* line 2, ../sass/partials/index.scss */
 .container-fluid {
   background-color: #A5102E;
-  height: 170px;
+  padding: 10px;
 }
 
-/* line 7, ../sass/partials/index.scss */
-.nav-link {
+/* line 8, ../sass/partials/index.scss */
+.navbar {
+  background: #A5102E;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 16, ../sass/partials/index.scss */
+.navbar-brand {
+  margin-right: 0;
+}
+
+/* line 25, ../sass/partials/index.scss */
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
   color: white;
   font-family: 'Overpass';
   font-style: normal;
@@ -83,226 +95,88 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 20px;
 }
 
-/* line 16, ../sass/partials/index.scss */
+/* line 34, ../sass/partials/index.scss */
 .info {
-  position: absolute;
-  left: 2.99%;
-  right: 74.86%;
-  top: 2.5%;
-  bottom: 96.24%;
-  width: 255px;
-  height: 58.56px;
-  Top: 86.80000000000001px;
-  Left: 43px;
-  border-radius: 10px;
-  background: rgba(239, 19, 19, 0.13);
-}
-
-/* line 30, ../sass/partials/index.scss */
-.contact {
-  position: absolute;
-  left: 8.38%;
-  top: 2.62%;
-  bottom: 96.92%;
+  margin-left: 12%;
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
+  width: auto;
 }
 
-/* line 44, ../sass/partials/index.scss */
-.num {
-  position: absolute;
-  left: 13.76%;
-  top: 37.18%;
-  bottom: 96.32%;
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-
-/* line 60, ../sass/partials/index.scss */
-.icone {
-  position: absolute;
-  margin-right: 50px;
-  bottom: 96.24%;
-  width: 100px;
-  height: 58.56px;
-  Top: 86.80000000000001px;
-  Left: 110%;
+/* line 45, ../sass/partials/index.scss */
+.contact, .contacte {
   border-radius: 10px;
   background: rgba(239, 19, 19, 0.13);
+  padding: 10px;
 }
 
-/* line 72, ../sass/partials/index.scss */
-.user {
-  position: absolute;
-  right: 57.49%;
-  top: 2.6%;
-  bottom: 96.64%;
+/* line 51, ../sass/partials/index.scss */
+.contacte {
+  display: flex;
+  width: 70px;
 }
 
-/* line 81, ../sass/partials/index.scss */
-.shop {
-  position: absolute;
-  right: 22.29%;
-  top: 16.75%;
-  bottom: 96.82%;
+/* line 56, ../sass/partials/index.scss */
+.fa-bag-shopping {
+  margin-left: 13px;
 }
 
 /* line 1, ../sass/partials/index1.scss */
-.container-fluide {
-  background-color: #A5102E;
-  height: 900px;
+.titre {
+  text-align: center;
+  color: #FFFFFF;
 }
 
-/* line 6, ../sass/partials/index1.scss */
-.titre {
-  position: absolute;
-  width: 731px;
-  height: 81px;
-  left: 361px;
-  top: 223px;
+/* line 7, ../sass/partials/index1.scss */
+.titre h2 {
   font-family: 'Overpass';
   font-style: italic;
   font-weight: 800;
   font-size: 64px;
   line-height: 81px;
-  text-align: center;
-  color: #FFFFFF;
 }
 
-/* line 25, ../sass/partials/index1.scss */
-.sous-titre {
-  position: absolute;
-  width: 584px;
-  height: 50px;
-  left: 434px;
-  top: 304px;
+/* line 15, ../sass/partials/index1.scss */
+.titre p {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #FFFFFF;
 }
 
-/* line 42, ../sass/partials/index1.scss */
+/* line 23, ../sass/partials/index1.scss */
 .img {
   position: absolute;
-  width: 1147px;
-  height: 794px;
-  left: 129px;
-  top: 241px;
+  margin-top: -8%;
 }
 
-/* line 50, ../sass/partials/index1.scss */
-.tomate1 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 10px;
-  top: 237px;
+/* line 29, ../sass/partials/index1.scss */
+.shop {
+  position: relative;
+  margin-top: -40%;
+  width: 600px;
+  height: 600px;
+  margin-left: 26%;
 }
 
-/* line 58, ../sass/partials/index1.scss */
-.tomate2 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 10px;
-  top: 740px;
-}
-
-/* line 66, ../sass/partials/index1.scss */
-.tomate3 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  top: 263px;
-  left: 1059px;
-  transform: rotate(46.72deg);
-}
-
-/* line 76, ../sass/partials/index1.scss */
-.tomate4 {
-  position: absolute;
-  width: 276px;
-  height: 325px;
-  left: 1059px;
-  top: 740px;
-}
-
-/* line 1, ../sass/partials/index3.scss */
-.container-fluides {
-  background-color: #fff;
-  height: 800px;
-}
-
-/* line 6, ../sass/partials/index3.scss */
-.fromage1 {
-  position: absolute;
-  width: 226.91px;
-  height: 362.92px;
-  left: 6.19px;
-  top: 1569.66px;
-  transform: rotate(-103.56deg);
-}
-
-/* line 16, ../sass/partials/index3.scss */
-.fromage3 {
-  position: absolute;
-  width: 226.91px;
-  height: 362.92px;
-  left: 1162.19px;
-  top: 1569.66px;
-  transform: rotate(-273.56deg);
-}
-
-/* line 26, ../sass/partials/index3.scss */
-.fromage4 {
-  position: absolute;
-  width: 226.91px;
-  height: 362.92px;
-  left: 1121.19px;
-  transform: rotate(-103.56deg);
-}
-
-/* line 34, ../sass/partials/index3.scss */
-.desc {
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #A5102E;
+/* line 5, ../sass/partials/index3.scss */
+.titre1 {
   text-align: center;
+  padding: 50px;
+  margin-left: 27%;
 }
 
-/* .desc1 {
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 41px;
-    text-align: center;
+/* line 11, ../sass/partials/index3.scss */
+.titre1 h4 {
+  color: #A5102E;
 }
 
-
-.desc2 {
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 51px;
-    text-align: center;
-} */
-/* line 63, ../sass/partials/index3.scss */
+/* line 17, ../sass/partials/index3.scss */
 .catalogue1 {
   position: absolute;
   width: 333px;
@@ -313,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* line 73, ../sass/partials/index3.scss */
+/* line 27, ../sass/partials/index3.scss */
 .catalogue-image {
   position: absolute;
   width: 300px;
@@ -321,25 +195,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 5px;
 }
 
-/* line 80, ../sass/partials/index3.scss */
-.prix {
-  position: absolute;
-  left: 779px;
-  top: 1162px;
-  background: #4D2C21;
-  border-radius: 5px;
-  white-space: nowrap;
-  padding: 7px;
-  color: #ffc107;
-}
-
-/* line 91, ../sass/partials/index3.scss */
+/* line 36, ../sass/partials/index3.scss */
 .prix3 {
   margin-left: 209px;
   padding: 11px;
 }
 
-/* line 97, ../sass/partials/index3.scss */
+/* line 42, ../sass/partials/index3.scss */
 .catalogue2 {
   width: 333px;
   height: 303px;
@@ -349,18 +211,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* line 107, ../sass/partials/index3.scss */
-.catalogue3 {
-  position: absolute;
-  width: 333px;
-  height: 303px;
-  left: 992px;
-  top: 1505px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-}
-
-/* line 118, ../sass/partials/index3.scss */
+/* line 53, ../sass/partials/index3.scss */
 .prixx {
   position: absolute;
   background: #4D2C21;
@@ -372,8 +223,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -29px;
 }
 
-/* line 135, ../sass/partials/index3.scss */
-.button1, .button2, .button3 {
+/* line 70, ../sass/partials/index3.scss */
+.button2 {
   position: absolute;
   width: 130px;
   height: 32px;
@@ -381,33 +232,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 20px;
   border: none;
   color: white;
-}
-
-/* line 145, ../sass/partials/index3.scss */
-.button1 {
-  left: 850px;
-  top: 1412px;
-}
-
-/* line 150, ../sass/partials/index3.scss */
-.button2 {
-  left: 94px;
-  top: 260px;
-}
-
-/* line 155, ../sass/partials/index3.scss */
-.button3 {
   left: 100px;
   top: 260px;
 }
 
-/* line 1, ../sass/partials/index4.scss */
-.container-fluidess {
+/* line 3, ../sass/partials/index4.scss */
+.container-fluide {
   background-color: #F8D65D;
-  height: 800px;
+  padding: 10px;
 }
 
-/* line 6, ../sass/partials/index4.scss */
+/* line 8, ../sass/partials/index4.scss */
 .avan, .avant {
   position: absolute;
   font-family: 'Overpass';
@@ -416,7 +251,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
 }
 
-/* line 15, ../sass/partials/index4.scss */
+/* line 17, ../sass/partials/index4.scss */
 .avan {
   width: 971px;
   height: 171px;
@@ -426,7 +261,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 61px;
 }
 
-/* line 24, ../sass/partials/index4.scss */
+/* line 26, ../sass/partials/index4.scss */
 .avant {
   width: 480px;
   height: 25px;
@@ -437,7 +272,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
 }
 
-/* line 34, ../sass/partials/index4.scss */
+/* line 36, ../sass/partials/index4.scss */
 .img22 {
   position: absolute;
   width: 483px;
@@ -446,9 +281,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 2092px;
 }
 
-/* line 42, ../sass/partials/index4.scss */
+/* line 44, ../sass/partials/index4.scss */
 .card1, .card2 {
-  position: absolute;
+  position: relative;
   width: 352px;
   height: 316px;
   background: rgba(236, 211, 119, 0.72);
@@ -457,42 +292,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 30px;
 }
 
-/* line 52, ../sass/partials/index4.scss */
-.card1 {
-  left: 66px;
-  top: 2178px;
-}
-
-/* line 57, ../sass/partials/index4.scss */
-.card2 {
-  left: 1060px;
-  top: 2178px;
-}
-
-/* line 62, ../sass/partials/index4.scss */
+/* line 56, ../sass/partials/index4.scss */
 .calorie {
   color: white;
   margin-top: 10px;
 }
 
-/* line 67, ../sass/partials/index4.scss */
+/* line 61, ../sass/partials/index4.scss */
 .bacon {
   margin-top: 21px;
 }
 
-/* line 71, ../sass/partials/index4.scss */
+/* line 65, ../sass/partials/index4.scss */
 .bas {
-  position: absolute;
-  width: 459px;
-  height: 25px;
-  left: 521px;
-  top: 2607px;
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  color: #000000;
+  text-align: center;
+}
+
+/* line 75, ../sass/partials/index4.scss */
+.glob {
+  display: flex;
+  margin-left: 10%;
+  margin-top: -10%;
 }
 
 /* line 1, ../sass/partials/index5.scss */
@@ -720,6 +545,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 16, ../sass/screen.scss */
 * {
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
 }

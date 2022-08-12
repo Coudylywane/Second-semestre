@@ -1,11 +1,23 @@
-/* line 1, ../../sass/partials/index.scss */
+/* line 2, ../../sass/partials/index.scss */
 .container-fluid {
   background-color: #A5102E;
-  height: 170px;
+  padding: 10px;
 }
 
-/* line 7, ../../sass/partials/index.scss */
-.nav-link {
+/* line 8, ../../sass/partials/index.scss */
+.navbar {
+  background: #A5102E;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 16, ../../sass/partials/index.scss */
+.navbar-brand {
+  margin-right: 0;
+}
+
+/* line 25, ../../sass/partials/index.scss */
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
   color: white;
   font-family: 'Overpass';
   font-style: normal;
@@ -14,74 +26,32 @@
   line-height: 20px;
 }
 
-/* line 16, ../../sass/partials/index.scss */
+/* line 34, ../../sass/partials/index.scss */
 .info {
-  position: absolute;
-  left: 2.99%;
-  right: 74.86%;
-  top: 2.5%;
-  bottom: 96.24%;
-  width: 255px;
-  height: 58.56px;
-  Top: 86.80000000000001px;
-  Left: 43px;
-  border-radius: 10px;
-  background: rgba(239, 19, 19, 0.13);
-}
-
-/* line 30, ../../sass/partials/index.scss */
-.contact {
-  position: absolute;
-  left: 8.38%;
-  top: 2.62%;
-  bottom: 96.92%;
+  margin-left: 12%;
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
+  width: auto;
 }
 
-/* line 44, ../../sass/partials/index.scss */
-.num {
-  position: absolute;
-  left: 13.76%;
-  top: 37.18%;
-  bottom: 96.32%;
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-
-/* line 60, ../../sass/partials/index.scss */
-.icone {
-  position: absolute;
-  margin-right: 50px;
-  bottom: 96.24%;
-  width: 100px;
-  height: 58.56px;
-  Top: 86.80000000000001px;
-  Left: 110%;
+/* line 45, ../../sass/partials/index.scss */
+.contact, .contacte {
   border-radius: 10px;
   background: rgba(239, 19, 19, 0.13);
+  padding: 10px;
 }
 
-/* line 72, ../../sass/partials/index.scss */
-.user {
-  position: absolute;
-  right: 57.49%;
-  top: 2.6%;
-  bottom: 96.64%;
+/* line 51, ../../sass/partials/index.scss */
+.contacte {
+  display: flex;
+  width: 70px;
 }
 
-/* line 81, ../../sass/partials/index.scss */
-.shop {
-  position: absolute;
-  right: 22.29%;
-  top: 16.75%;
-  bottom: 96.82%;
+/* line 56, ../../sass/partials/index.scss */
+.fa-bag-shopping {
+  margin-left: 13px;
 }
