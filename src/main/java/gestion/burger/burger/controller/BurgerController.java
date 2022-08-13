@@ -23,6 +23,11 @@ public class BurgerController {
         return "burger/burger-add";
     }
 
+    @GetMapping("/detail")
+    public String details(Model model) {
+        return "burger/burger-details";
+    }
+
 
     @PostMapping("/burger")
     public String addCategorie(@ModelAttribute("burger") Burger burger,Model model) {
