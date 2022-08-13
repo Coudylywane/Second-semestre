@@ -1,11 +1,14 @@
-/* line 1, ../../sass/partials/index7.scss */
+/* .container-footer{
+    background-color:#A5102E;
+    border: 2px solid black;
+    height: 70px;
+} */
+/* line 7, ../../sass/partials/index7.scss */
 .container-footer {
-  background-color: #A5102E;
-  border: 2px solid black;
-  height: 70px;
+  margin-left: 10%;
 }
 
-/* line 7, ../../sass/partials/index7.scss */
+/* line 11, ../../sass/partials/index7.scss */
 .fa-facebook-f {
   color: #F8D65D;
 }

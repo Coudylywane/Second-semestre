@@ -381,26 +381,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 19px;
 }
 
-/* line 1, ../sass/partials/index6.scss */
-.container-livraison {
-  background-color: #A5102E;
-  height: 600px;
-}
-
-/* line 6, ../sass/partials/index6.scss */
-.img26 {
-  position: absolute;
-  width: 616px;
-  height: 534px;
-  margin-top: 43px;
-}
-
-/* line 13, ../sass/partials/index6.scss */
-.liv {
-  position: absolute;
-  width: 467px;
-  height: 84px;
-  left: 845px;
+/* line 3, ../sass/partials/index6.scss */
+.titre h3 {
   font-family: 'Pacifico';
   font-style: normal;
   font-weight: 400;
@@ -409,13 +391,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
 }
 
-/* line 28, ../sass/partials/index6.scss */
-.liv1 {
-  position: absolute;
-  width: 385px;
-  height: 30px;
-  left: 845px;
-  margin-top: 83px;
+/* line 13, ../sass/partials/index6.scss */
+.titre h5 {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 700;
@@ -424,44 +401,94 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #FFFFFF;
 }
 
-/* line 44, ../sass/partials/index6.scss */
-.liv2 {
-  position: absolute;
-  width: 513px;
-  height: 175px;
-  left: 845px;
+/* line 23, ../sass/partials/index6.scss */
+.titre h6 {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-top: 146px;
 }
 
-/* line 58, ../sass/partials/index6.scss */
-.liv3 {
-  position: absolute;
-  width: 441px;
-  height: 30px;
-  left: 845px;
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: #FFFFFF;
-  margin-top: 342px;
+/* .container-livraison{
+    background-color: #A5102E;
+    height: 600px;
 }
 
-/* line 1, ../sass/partials/index7.scss */
-.container-footer {
-  background-color: #A5102E;
-  border: 2px solid black;
-  height: 70px;
+.img26{
+    position: absolute;
+    width: 616px;
+    height: 534px;
+    margin-top: 43px;
 }
 
+.liv{
+    position: absolute;
+    width: 467px;
+    height: 84px;
+    left: 845px;
+
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 84px;
+
+    color: #FFFFFF;
+}
+
+.liv1{
+    
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+.liv2 {
+    position: absolute;
+    width: 513px;
+    height: 175px;
+    left: 845px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 146px;
+}
+
+.liv3{
+    position: absolute;
+    width: 441px;
+    height: 30px;
+    left: 845px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 342px;
+}
+
+ */
+/* .container-footer{
+    background-color:#A5102E;
+    border: 2px solid black;
+    height: 70px;
+} */
 /* line 7, ../sass/partials/index7.scss */
+.container-footer {
+  margin-left: 10%;
+}
+
+/* line 11, ../sass/partials/index7.scss */
 .fa-facebook-f {
   color: #F8D65D;
 }
