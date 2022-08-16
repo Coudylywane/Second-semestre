@@ -8,7 +8,7 @@
         <h2>Puissant, Charnu et mmm</h2>
         <p>le remede a toutes les fingales est cache a l’interieur du Burger</p>
     </div>
-    <div class="container">
+  <div class="container">
       <div class="row">
         <div class="col-6">
           <img th:src="@{images/1.png}"  alt="...">
@@ -30,6 +30,27 @@
               <p>mais ils sont tous excellents</p>
           </div>
       </div>
+      <div class="row align-items-center">
+          <div class="col-md-6 col-lg-3" th:each=" b: ${burgers}">
+              <div class="shop-item">
+                  <div class="shop-item-img" id="img1">
+                      <img th:src="@{images/burger3.png}"  alt="...">
+                      <div class="shop-item-meta">
+                          <a th:href="@{/detail}"><i class="fa-solid fa-plus"></i></a>
+                          
+                          <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>  
+                      </div>
+                  </div>
+                  <div class="shop-item-info">
+                      <a href="#">
+                          <h4 class="shop-item-title" th:text="${b.nom}"></h4>
+                      </a>
+                      <div class="shop-item-price" th:text="${b.prix}"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+       <!--
       <div class="row">
           <div class="col-md-4 " th:each=" b: ${burgers}">
             <div class="catalogue2" >
@@ -43,7 +64,7 @@
             </div> 
           </div> 
       </div> 
-       
+       --> 
     </div>
 
     <div class="container-fluide">

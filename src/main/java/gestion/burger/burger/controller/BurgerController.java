@@ -36,6 +36,7 @@ public class BurgerController {
             return "burger/burger-add";
         }
         burgerService.addBurger(burger);
+        
         return "redirect:/index";
        /*  if (burger.getId() != null) {
             return "redirect:/index";

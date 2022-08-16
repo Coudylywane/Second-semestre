@@ -189,7 +189,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 27, ../sass/partials/index3.scss */
 .catalogue-image {
-  position: absolute;
+  /*     position: absolute;
+   */
   width: 300px;
   height: 300px;
   left: 5px;
@@ -211,7 +212,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* line 53, ../sass/partials/index3.scss */
+/* line 55, ../sass/partials/index3.scss */
 .prixx {
   position: absolute;
   background: #4D2C21;
@@ -223,7 +224,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: -29px;
 }
 
-/* line 70, ../sass/partials/index3.scss */
+/* line 72, ../sass/partials/index3.scss */
 .button2 {
   position: absolute;
   width: 130px;
@@ -234,6 +235,116 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: white;
   left: 100px;
   top: 260px;
+}
+
+/* line 89, ../sass/partials/index3.scss */
+.shop-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 98, ../sass/partials/index3.scss */
+.shop-item-img {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 103, ../sass/partials/index3.scss */
+.shop-item-img:hover {
+  border-radius: 10px;
+  z-index: 2;
+  transform: scale(0.9);
+  background-color: #ffc107;
+  transition: all 0.3s linear 0s;
+}
+
+/* line 111, ../sass/partials/index3.scss */
+.shop-item-sale {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 47px;
+  border-radius: 50%;
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background: #FB7223;
+}
+
+/* line 125, ../sass/partials/index3.scss */
+.img, img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  height: auto;
+}
+
+/* line 135, ../sass/partials/index3.scss */
+.shop-item-meta {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  z-index: 3;
+  transition: all .5s ease-in-out;
+}
+
+/* line 143, ../sass/partials/index3.scss */
+.shop-item-meta a {
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white;
+}
+
+/* line 154, ../sass/partials/index3.scss */
+.shop-item-meta a:hover {
+  color: #A5102E;
+}
+
+/* line 158, ../sass/partials/index3.scss */
+.shop-item-info {
+  padding-top: 7px;
+  text-align: center;
+}
+
+/* line 163, ../sass/partials/index3.scss */
+.shop-item-rate {
+  margin-bottom: 5px;
+  color: #FB7223;
+}
+
+/* line 168, ../sass/partials/index3.scss */
+.shop-item-title {
+  font-size: 19px;
+  color: #222222;
+  transition: all .5s ease-in-out;
+}
+
+/* line 174, ../sass/partials/index3.scss */
+.shop-item-price {
+  font-size: 18px;
+  color: #FB7223;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* line 181, ../sass/partials/index3.scss */
+.shop-item-price del {
+  color: #7a8a9e;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 /* line 3, ../sass/partials/index4.scss */
@@ -494,7 +605,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 5px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;

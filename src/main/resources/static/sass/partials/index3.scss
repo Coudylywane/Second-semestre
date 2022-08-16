@@ -25,8 +25,8 @@ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
 
 .catalogue-image {
-    position: absolute;
-    width: 300px;
+/*     position: absolute;
+ */    width: 300px;
     height: 300px;
     left: 5px;
 }
@@ -47,6 +47,8 @@ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
+
+
 
 
 
@@ -79,6 +81,108 @@ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
     top: 260px;
 }
 
+///////////////////////////////////
+/// 
+///  
+
+
+.shop-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px; 
+    background: #fff;
+
+    box-shadow: 0px 0px 40px 5px rgba(0, 0 ,0 ,0.5);
+}
+
+.shop-item-img {
+    position: relative;
+    z-index: 1;
+}
+
+.shop-item-img:hover {
+    border-radius: 10px;
+    z-index: 2;
+    transform: scale(0.9);
+    background-color: #ffc107;
+    transition: all 0.3s linear 0s;
+}
+
+.shop-item-sale {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 47px;
+    border-radius: 50%;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #FB7223;
+}
+
+.img, img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    height: auto;
+}
+
+.shop-item-meta {
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    z-index: 3;
+    transition: all .5s ease-in-out;
+}
+
+.shop-item-meta a {
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.shop-item-meta a:hover{
+    color: #A5102E;
+}
+
+.shop-item-info {
+    padding-top: 7px;
+    text-align: center;
+}
+
+.shop-item-rate {
+    margin-bottom: 5px;
+    color: #FB7223;
+}
+
+.shop-item-title {
+    font-size: 19px;
+    color: #222222;
+    transition: all .5s ease-in-out;
+}
+
+.shop-item-price {
+    font-size: 18px;
+    color: #FB7223;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.shop-item-price del {
+    color: #7a8a9e;
+    margin-right: 10px;
+    font-weight: 500;
+}
 
 
 

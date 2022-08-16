@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,10 +14,20 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Boisson {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    private String nom ;
+    private int quantiteStock ;
+
+    @ManyToOne
+    @JoinColumn(name = "taille", referencedColumnName = "id")
+    private Taille taille;
+
+    @ManyToOne
+    @JoinColumn(name = "marque" , referencedColumnName = "id")
+    private Marque marque;
+    
+
+
 
 }

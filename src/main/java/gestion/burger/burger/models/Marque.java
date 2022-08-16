@@ -9,22 +9,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import lombok.Setter;
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Setter
 @Getter
-public class Taille {
+@Setter
+public class Marque {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     private String nom ;
-    private int prix ;
 
-    @OneToMany(mappedBy = "taille")
-    private List<MenuTaille> menuTailles = new ArrayList<>();
-
-    @OneToMany(mappedBy = "taille")
+    @OneToMany(mappedBy = "marque")
     private List<Boisson> boissons = new ArrayList<>();
 }
