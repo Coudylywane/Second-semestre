@@ -1,11 +1,18 @@
 package gestion.burger.burger.controller;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import gestion.burger.burger.models.Burger;
 import gestion.burger.burger.service.BurgerService;
@@ -28,22 +35,28 @@ public class BurgerController {
         return "burger/burger-details";
     }
 
+    public static String upload = System.getProperty("user.dir") + "/src/main/resources/static/images";
+
 
     @PostMapping("/burger")
-    public String addCategorie(@ModelAttribute("burger") Burger burger,Model model) {
-        if(burger == null || burger.getNom() == null || burger.getNom().equals("")) {
+    public String addBurger(@ModelAttribute("burger") Burger burger,Model model,
+    @RequestParam("fileImage")MultipartFile fileImage) throws IOException {
+        /* if(burger == null || burger.getNom() == null || burger.getNom().equals("")) {
             model.addAttribute("errorNom", "Champ obligatoire");
             return "burger/burger-add";
         }
-        burgerService.addBurger(burger);
+ */
+        String image ;
+
+        if (!fileImage.isEmpty()) {
+            image = fileImage.getOriginalFilename();
+            Path fileName = Paths.get(upload , image);
+            Files.write(fileName, fileImage.getBytes());
+            burger.setImage(image);
+            burgerService.addBurger(burger);
+        }
         
         return "redirect:/index";
-       /*  if (burger.getId() != null) {
-            return "redirect:/index";
-        } else {
-            model.addAttribute("error", "Echec de l'operation");
-            return "burger/burger-add";
-        }  */
         
     }
 }
