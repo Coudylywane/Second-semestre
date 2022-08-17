@@ -1,5 +1,7 @@
 package gestion.burger.burger.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,12 @@ public class TailleService {
             return taille;
         } catch (Exception e) {
             log.severe(e.getLocalizedMessage());
-            throw e ;        }
+            throw e ;       
+         }
+    }
+
+    public List<Taille> getAllTaille(){
+        return tailleRepository.findAll();
     }
     
     

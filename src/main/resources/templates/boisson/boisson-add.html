@@ -1,0 +1,38 @@
+<div th:replace="fragment/header :: header"></div>
+<div th:replace="fragment/navebar :: navbar"></div>
+
+
+<body>
+    <h1>Ajout Boisson</h1>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <form th:action="@{/boisson}" th:object="${boisson}" method="post" enctype="multipart/form-data">
+                   <!-- --> <div class="form-floating mb-3">
+                        <input type="text" class="form-control" th:field="*{quantiteStock}" id="floatingInput">
+                        <label for="floatingInput">Quantite En Stock</label>
+                    </div> 
+                    <select th:field="*{taille.id}" class="form-select" aria-label="Default select example">
+                      <option th:each=" t : ${tailles}" th:value="${t.id}" th:text="${t.nom}">
+                      </option>
+                    </select> 
+
+                    <select th:field="*{marque.id}" class="form-select" aria-label="Default select example">
+                        <option th:each=" m : ${marques}" th:value="${m.id}" th:text="${m.nom}">
+                        </option>
+                      </select>
+
+                      <div class="form-floating mb-3">
+                        <input type="file" class="form-control" name="fileImage" id="floatingInput">
+                        <label for="floatingInput">Image</label>
+                      </div> 
+                    
+                    <div class="mb-5">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+      </div>
+</body>

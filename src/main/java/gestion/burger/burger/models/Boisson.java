@@ -18,6 +18,7 @@ public class Boisson {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     private int quantiteStock ;
+    private String image ;
 
     @ManyToOne
     @JoinColumn(name = "taille", referencedColumnName = "id")

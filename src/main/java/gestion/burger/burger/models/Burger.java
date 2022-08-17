@@ -24,6 +24,7 @@ public class Burger {
     private String nom ;
     private int prix ;
     private String description ;
+    
     private String image ;
 
     @OneToMany(mappedBy = "burger")
