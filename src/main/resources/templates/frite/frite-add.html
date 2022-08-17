@@ -1,0 +1,32 @@
+<div th:replace="fragment/header :: header"></div>
+<div th:replace="fragment/navebar :: navbar"></div>
+
+<body>
+    <h1>Ajout Marque</h1>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <form th:action="@{/frite}" th:object="${frite}" method="post" enctype="multipart/form-data">
+                    <div class="form-floating mb-3">
+                        <label for="floatingInput">Nom</label>
+                        <input type="text" class="form-control" th:field="*{nom}" id="floatingInput">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="floatingInput">Prix</label>
+                        <input type="number" class="form-control" th:field="*{prix}" id="floatingInput">
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="file" class="form-control" name="fileImage" id="floatingInput">
+                        <label for="floatingInput">Image</label>
+                      </div> 
+
+                    <div class="mb-5">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div> 
+                  </form>
+            </div>
+        </div>
+      </div>
+</body>

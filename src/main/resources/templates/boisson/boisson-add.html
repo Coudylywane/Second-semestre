@@ -13,7 +13,7 @@
                         <input type="text" class="form-control" th:field="*{quantiteStock}" id="floatingInput">
                         <label for="floatingInput">Quantite En Stock</label>
                     </div> 
-                    <select th:field="*{taille.id}" class="form-select" aria-label="Default select example">
+                    <select th:field="*{taille.id}" class="form-select"  aria-label="Default select example">
                       <option th:each=" t : ${tailles}" th:value="${t.id}" th:text="${t.nom}">
                       </option>
                     </select> 

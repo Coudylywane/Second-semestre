@@ -22,6 +22,7 @@ public class Frite {
     private String nom ;
     private int prix ;
     private String type ;
+    private String image ;
 
     @OneToMany(mappedBy = "frite")
     private List<FriteMenu> friteMenus = new ArrayList<>();
