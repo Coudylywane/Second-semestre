@@ -21,7 +21,7 @@
                     <select th:field="*{marque.id}" class="form-select" aria-label="Default select example">
                         <option th:each=" m : ${marques}" th:value="${m.id}" th:text="${m.nom}">
                         </option>
-                      </select>
+                    </select>
 
                       <div class="form-floating mb-3">
                         <input type="file" class="form-control" name="fileImage" id="floatingInput">

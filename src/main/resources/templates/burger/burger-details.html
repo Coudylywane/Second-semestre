@@ -1,3 +1,36 @@
 <div th:replace="fragment/header :: header"></div>
 <div th:replace="fragment/navebar :: navbar"></div>
 
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card mt-5" >
+                    <img th:src="@{${'/images/' + produit.image}}"  alt="...">
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="container mt-5">
+                   <div>
+                        <h1 th:text="${produit.nom}"></h1>
+                        <h1 th:text="${produit.prix} + 'FCFA'"></h1>
+                        <p th:text="${produit.description}"></p>
+                        <div class="multiple">
+                            <div class="icone">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <p>0</p>
+                            <div>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        
+                            
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

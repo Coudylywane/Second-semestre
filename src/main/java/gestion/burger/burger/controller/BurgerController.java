@@ -1,6 +1,6 @@
 package gestion.burger.burger.controller;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,12 +10,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import gestion.burger.burger.models.Burger;
+import gestion.burger.burger.models.Menu;
 import gestion.burger.burger.service.BurgerService;
+import gestion.burger.burger.service.MenuService;
 
 @Controller
 public class BurgerController {
@@ -30,8 +33,15 @@ public class BurgerController {
         return "burger/burger-add";
     }
 
-    @GetMapping("/detail")
-    public String details(Model model) {
+    @GetMapping("/detail/{type}/{id}")
+    public String details(Model model , @PathVariable final long id , @PathVariable String type) {
+
+        if (type.contains("Burger")) {
+            final Burger burger = burgerService.findBurgerById(id);
+            model.addAttribute("produit", burger);
+        }else if (type.contains("Menu")) {
+            /* final Menu menu = MenuService.findBurgerById(id);  */
+        }
         return "burger/burger-details";
     }
 

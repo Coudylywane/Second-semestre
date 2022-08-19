@@ -21,7 +21,6 @@ public class Frite {
     private Long id ;
     private String nom ;
     private int prix ;
-    private String type ;
     private String image ;
 
     @OneToMany(mappedBy = "frite")

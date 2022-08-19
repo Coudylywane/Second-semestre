@@ -22,6 +22,7 @@ public class Menu {
     private Long id ;
     private String nom ;
     private int prix ;
+    private String image ;
 
     @OneToMany(mappedBy = "menu")
     private List<BurgerMenu> burgerMenus = new ArrayList<>();

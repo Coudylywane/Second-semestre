@@ -605,6 +605,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 5px;
 }
 
+/* line 1, ../sass/partials/details.scss */
+.multiple {
+  display: flex;
+}
+
 /* line 17, ../sass/screen.scss */
 * {
   margin: 0;

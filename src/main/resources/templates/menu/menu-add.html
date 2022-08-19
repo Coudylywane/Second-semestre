@@ -1,0 +1,57 @@
+<div th:replace="fragment/header :: header"></div>
+<div th:replace="fragment/navebar :: navbar"></div>
+
+<body>
+    <h1>Ajout Menu</h1>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <form th:action="@{/menu}" th:object="${menu}" method="post" enctype="multipart/form-data">
+                    <div class="form-floating mb-3">
+                        <label for="floatingInput">Nom</label>
+                        <input type="text" class="form-control" th:field="*{nom}" id="floatingInput">
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <label for="floatingInput">Prix</label>
+                        <input type="number" class="form-control" th:field="*{prix}" id="floatingInput">
+                    </div>
+
+                 <!--  <select class="form-select" aria-label="Default select example" multiple="multiple" name="burger[]">
+                        <option th:each="b : ${burgers}" th:value="${b.id}" th:text="${b.nom}">
+                        </option>
+                    </select> --> 
+
+                     <div class="form-floating mb-3" th:each="b : ${burgers}">
+                        <label for="floatingInput"  th:text="${b.nom}"></label>
+                        <input type="checkbox" name="burgers[]" id="" th:value="${b.id}">
+                    </div> 
+
+                    <div class="form-floating mb-3" th:each="f : ${frites}">
+                        <label for="floatingInput"  th:text="${f.nom}"></label>
+                        <input type="checkbox" name="" id="" th:value="${f.id}">
+                    </div> 
+
+                    <!--
+                     <select name="" id="" multiple >
+                        <option value="" th:text="${t.nom}"></option>
+                    </select>
+                    --> 
+                
+                    <div class="form-floating mb-3">
+                        <label for="floatingInput">Image</label>
+                        <input type="file" class="form-control" name="fileImage" id="floatingInput">
+                    </div>
+                   
+
+                    <div class="mb-5">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </div> 
+                  </form>
+            </div>
+        </div>
+      </div>
+</body>
+
+<script src=""></script>
