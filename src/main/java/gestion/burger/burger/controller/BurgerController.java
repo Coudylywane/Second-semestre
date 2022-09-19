@@ -16,16 +16,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import gestion.burger.burger.models.Burger;
-import gestion.burger.burger.models.Menu;
 import gestion.burger.burger.service.BurgerService;
-import gestion.burger.burger.service.MenuService;
 
 @Controller
 public class BurgerController {
     @Autowired
     private BurgerService burgerService;
 
-    @GetMapping("/burger")
+    @GetMapping("/gestionnaire/burger")
     public String getViewAddCategorie(Model model) {
         Burger burger = new Burger();
 
@@ -48,14 +46,16 @@ public class BurgerController {
     public static String upload = System.getProperty("user.dir") + "/src/main/resources/static/images";
 
 
-    @PostMapping("/burger")
+    @PostMapping("/gestionnaire/burger")
     public String addBurger(@ModelAttribute("burger") Burger burger,Model model,
-    @RequestParam("fileImage")MultipartFile fileImage) throws IOException {
-        /* if(burger == null || burger.getNom() == null || burger.getNom().equals("")) {
+    @RequestParam("fileImagburgere")MultipartFile fileImage) throws IOException {
+
+        if(burger == null || burger.getNom() == null || burger.getNom().equals("")) {
             model.addAttribute("errorNom", "Champ obligatoire");
             return "burger/burger-add";
         }
- */
+
+
         String image ;
 
         if (!fileImage.isEmpty()) {

@@ -14,21 +14,23 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Boisson {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
     private int quantiteStock ;
     private String image ;
+    
 
     @ManyToOne
     @JoinColumn(name = "taille", referencedColumnName = "id")
     private Taille taille;
+    
 
     @ManyToOne
     @JoinColumn(name = "marque" , referencedColumnName = "id")
     private Marque marque;
     
 
-
-
 }
+ 

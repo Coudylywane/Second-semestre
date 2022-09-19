@@ -33,7 +33,7 @@ public class FriteController {
     public static String upload = System.getProperty("user.dir") + "/src/main/resources/static/images";
 
 
-    @PostMapping("/frite")
+    @PostMapping("/gestionnaire/frite")
     public String addBurger(@ModelAttribute("frite") Frite frite,Model model,
     @RequestParam("fileImage")MultipartFile fileImage) throws IOException {
         /* if(burger == null || burger.getNom() == null || burger.getNom().equals("")) {

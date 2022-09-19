@@ -1,0 +1,61 @@
+<div th:replace="fragment/header :: header"></div>
+<div th:replace="fragment/navebar :: navbar"></div>
+
+<body>
+  <div class="container px-4  " style="padding: 40px;">
+    <div class="card" style="width: 73rem;">
+      <div class="row" style="width: 73rem;">
+        <div class="col-10 entete1" style="padding: 40px;">
+          <h1>Burger</h1>
+          <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page</p>  
+        </div>
+        <div class="col-2" style="padding: 40px;">
+          <a href="" class="button"><i class="fa-solid fa-plus"></i>Ajouter</a>
+        </div>
+      </div>
+      <div class="table">
+        <table class="table table-striped  table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marque</th>
+              <th scope="col">Taille</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Quantite en Stock</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="bo : ${boissons}">
+              <th scope="row" th:text="${bo.id}"></th>
+              <td th:text="${bo.marque.nom}"></td>
+              <td th:text="${bo.taille.nom}"></td>
+              <td th:text="${bo.taille.prix}"></td>
+              <td th:text="${bo.quantiteStock}"></td>
+             
+              <td>
+                <a href="" class="modif"> Modifier</a>
+                <a href="" class="supprime"><i class="fa-solid fa-xmark"></i> Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="container" style="padding: 40px;">
+        <div class="row gx-5 card" style="width: 73rem;">
+          <div class="entete1 col-10">
+            <h1>Burger</h1>
+            <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page</p>  
+          </div>
+          <div class=" col-2">
+            <button class="button"><i class="fa-solid fa-plus"></i>Ajouter</button>
+          </div>
+         </div>
+
+        <div class="table">
+        </div>
+
+      </div> --> 
+</body>

@@ -1,0 +1,91 @@
+/* line 1, ../../sass/partials/list.scss */
+.entete {
+  display: flex;
+}
+
+/* line 6, ../../sass/partials/list.scss */
+.entete1 h1 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+/* line 15, ../../sass/partials/list.scss */
+.entete1 p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 22, ../../sass/partials/list.scss */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  border: none;
+  color: white;
+  background: #A5102E;
+  border-radius: 4px;
+}
+
+/* line 34, ../../sass/partials/list.scss */
+.button:hover {
+  color: white;
+}
+
+/* line 38, ../../sass/partials/list.scss */
+th {
+  text-align: center;
+  padding: 8px;
+}
+
+/* line 42, ../../sass/partials/list.scss */
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+/* line 47, ../../sass/partials/list.scss */
+.modif {
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  border: none;
+  color: white;
+  background: #A5102E;
+  border-radius: 4px;
+}
+
+/* line 58, ../../sass/partials/list.scss */
+.supprime {
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #eae2e2;
+  color: black;
+  background-color: #F2F2F4;
+}
+
+/* line 69, ../../sass/partials/list.scss */
+a:link {
+  text-decoration: none;
+}
+
+/* line 73, ../../sass/partials/list.scss */
+.supprime:hover {
+  background-color: #FB7223;
+  color: white;
+}
+
+/* line 78, ../../sass/partials/list.scss */
+.modif:hover {
+  color: white;
+}

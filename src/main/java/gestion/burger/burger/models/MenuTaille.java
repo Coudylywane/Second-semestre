@@ -17,7 +17,7 @@ public class MenuTaille {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String quantite ;
+    private int quantite ;
 
     @ManyToOne
     @JoinColumn(name = "taille", referencedColumnName = "id")

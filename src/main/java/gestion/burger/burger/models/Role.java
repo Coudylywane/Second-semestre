@@ -1,7 +1,5 @@
 package gestion.burger.burger.models;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,16 +15,12 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Burger {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id ;
-    private String nom ;
-    private int prix ;
-    private String description ;
-    private String image ;
+    private Long id;
+    private String libelle ;
 
-    @OneToMany(mappedBy = "burger")
-    private List<BurgerMenu> burgerMenus = new ArrayList<>();
-    
+    @OneToMany(mappedBy = "role")
+    private List<User> users = new ArrayList<>();
 }

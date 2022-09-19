@@ -10,27 +10,41 @@
                 <form th:action="@{/menu}" th:object="${menu}" method="post" enctype="multipart/form-data">
                     <div class="form-floating mb-3">
                         <label for="floatingInput">Nom</label>
-                        <input type="text" class="form-control" th:field="*{nom}" id="floatingInput">
+                        <input type="text" class="form-control" th:field="*{menu.nom}" id="floatingInput">
                     </div>
 
                     <div class="form-floating mb-3">
                         <label for="floatingInput">Prix</label>
-                        <input type="number" class="form-control" th:field="*{prix}" id="floatingInput">
+                        <input type="number" class="form-control" th:field="*{menu.prix}" id="floatingInput">
                     </div>
-
-                 <!--  <select class="form-select" aria-label="Default select example" multiple="multiple" name="burger[]">
-                        <option th:each="b : ${burgers}" th:value="${b.id}" th:text="${b.nom}">
-                        </option>
-                    </select> --> 
+                <!--    
+                        <select class="form-select" aria-label="Default select example" multiple="multiple" name="burger[]">
+                            <option th:each="b : ${burgers}" th:value="${b.id}" th:text="${b.nom}">
+                            </option>
+                        </select> 
+                --> 
 
                      <div class="form-floating mb-3" th:each="b : ${burgers}">
                         <label for="floatingInput"  th:text="${b.nom}"></label>
-                        <input type="checkbox" name="burgers[]" id="" th:value="${b.id}">
+                        <input type="checkbox" name="burgers" th:field="*{burgers}" id="" th:value="${b.id}">
+                        <label for="">quantite</label>
+                        <input type="text" th:field="*{quantiteBurger}">  
                     </div> 
 
                     <div class="form-floating mb-3" th:each="f : ${frites}">
                         <label for="floatingInput"  th:text="${f.nom}"></label>
-                        <input type="checkbox" name="" id="" th:value="${f.id}">
+                        <input type="checkbox" name="frites" id="" th:field="*{frites}" th:value="${f.id}">
+                        <label for="">quantite</label>
+                        <input type="text" th:field="*{quantiteFrite}"> 
+                        
+                    </div> 
+
+                    <div class="form-floating mb-3" th:each="t : ${tailles}">
+                        <label for="floatingInput"  th:text="${t.nom}"></label>
+                        <input type="checkbox" name="tailles" id="" th:field="*{tailles}" th:value="${t.id}">
+                        <label for="">quantite</label>
+                        <input type="text" th:field="*{quantiteTaille}"> 
+                       
                     </div> 
 
                     <!--

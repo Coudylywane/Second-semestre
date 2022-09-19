@@ -43,7 +43,7 @@ public class BoissonController {
 
     //////taille/////
 
-        @GetMapping("/taille")
+        @GetMapping("/gestionnaire/taille")
         public String getViewAddTaille(Model model){
             Taille taille = new Taille();
 
@@ -67,7 +67,7 @@ public class BoissonController {
             //////Marque/////
 
 
-        @GetMapping("/marque")
+        @GetMapping("/gestionnaire/marque")
         public String getViewAddMarque(Model model){
             Marque marque = new Marque();
             model.addAttribute("marque", marque);
@@ -89,7 +89,7 @@ public class BoissonController {
 
            /////////////////boisson///////////////
 
-        @GetMapping("/boisson")
+        @GetMapping("/gestionnaire//boisson")
         public String getViewAddBoisson(Model model){
 
             Boisson boisson = new Boisson();
@@ -105,7 +105,7 @@ public class BoissonController {
         public static String upload = System.getProperty("user.dir") + "/src/main/resources/static/images";
 
 
-        @PostMapping("/boisson")
+        @PostMapping("/gestionnaire/boisson")
         public String addBoisson(@ModelAttribute("boisson") Boisson boisson , Model model ,
         @RequestParam("fileImage")MultipartFile fileImage) throws IOException{
             
@@ -143,6 +143,18 @@ public class BoissonController {
            return "boisson/boisson-add" ;
 
         }
+
+        @GetMapping("/gestionnaire/boisson-list")
+        public String listBoisson(Model model){
+
+            List<Boisson> boissons = boissonService.getAllBoissons();
+
+            model.addAttribute("boissons", boissons);
+            return "boisson/boisson-liste";
+        }
+
+
+
  
 
         

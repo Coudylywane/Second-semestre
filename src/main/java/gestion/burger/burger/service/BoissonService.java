@@ -1,5 +1,7 @@
 package gestion.burger.burger.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,4 +24,11 @@ public class BoissonService {
             throw e ;  
         }
     }
+    
+
+    public List<Boisson> getAllBoissons(){
+        return boissonRepository.findAll();
+    }
+
+   
 }

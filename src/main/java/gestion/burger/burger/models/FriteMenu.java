@@ -14,10 +14,10 @@ import lombok.Setter;
 @Setter
 @Getter
 public class FriteMenu {
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    private String quatite ;
+    private int quantite ;
 
     @ManyToOne
     @JoinColumn(name = "frite", referencedColumnName = "id")
